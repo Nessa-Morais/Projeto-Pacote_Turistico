@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Vanessa\\SENAC\\UC 04\\Atividade_2\\Atividade_2.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Vanessa\\SENAC\\UC 04\\Atividade_2\\Atividade_2.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Vanessa\\SENAC\\UC 04\\Atividade_2\\Atividade_2.csproj",
+        "projectName": "Atividade_2",
+        "projectPath": "C:\\Users\\Vanessa\\SENAC\\UC 04\\Atividade_2\\Atividade_2.csproj",
+        "packagesPath": "C:\\Users\\Vanessa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Vanessa\\SENAC\\UC 04\\Atividade_2\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Vanessa\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.1.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.414\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

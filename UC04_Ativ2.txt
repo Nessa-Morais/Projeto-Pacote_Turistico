@@ -1,0 +1,39 @@
+CREATE DATABASE Turismo;
+
+CREATE TABLE Usuario(
+     Id int(11) AUTO_INCREMENT,
+     Nome varchar(200),
+     Login varchar(30),     
+Senha varchar(30),
+     DataNascimento datetime,
+     PRIMARY KEY (Id)
+     );
+
+INSERT INTO Usuario (Nome, Login, Senha, DataNascimento) VALUES 
+('Vanessa', '123', '321', '1986-12-07');
+
+INSERT INTO Usuario (Nome, Login, Senha, DataNascimento) VALUES 
+('Livia', '456', '654', '1991-01-06');
+
+INSERT INTO Usuario (Nome, Login, Senha, DataNascimento) VALUES 
+('Iolanda', '789', '987', '1955-10-31');
+
+
+CREATE TABLE PacotesTuristicos(
+     Id int(11) AUTO_INCREMENT,
+     Nome varchar(200),
+     Origem varchar(30),
+     Destino varchar(30),
+     Atrativos varchar(200),
+     Saida datetime,
+     Retorno datetime,
+     Usuario int(30),
+     PRIMARY KEY (Id),
+     FOREIGN KEY (Usuario) REFERENCES Usuario (Id)
+     );
+
+INSERT INTO PacotesTuristicos (Nome, Origem, Destino, Atrativos, Saida, Retorno, Usuario) VALUES ('Vanessa', 'Rio de Janeiro', 'Doha', 'Copa do Mundo', '2022-11-16', '2022-12-20',1);
+
+INSERT INTO PacotesTuristicos (Nome, Origem, Destino, Atrativos, Saida, Retorno, Usuario) VALUES ('Livia', 'Rio de Janeiro', 'Carneiros', 'Carnaval', '2022-02-24', '2022-02-27',2);
+
+INSERT INTO PacotesTuristicos (Nome, Origem, Destino, Atrativos, Saida, Retorno, Usuario) VALUES ('Iolanda', 'Rio de Janeiro', 'Cancun', 'Praias', '2022-06-16', '2022-06-20',3);
